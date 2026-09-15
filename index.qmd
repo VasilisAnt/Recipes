@@ -1,0 +1,16 @@
+---
+title: "Συνταγές"
+listing:
+  contents: recipes
+  type: default
+  categories: true
+  sort: "title asc"
+  fields: [title, categories]
+  field-display-names:
+    title: "Τίτλος"
+    categories: "Κατηγορία"
+page-layout: full
+title-block-banner: false
+---
+
+Όλες οι συνταγές της συλλογής, ταξινομημένες ανά κατηγορία. Κάντε κλικ σε μια κατηγορία αριστερά για φιλτράρισμα.

@@ -1,0 +1,8 @@
+/* Light custom styling on top of the cosmo theme */
+body {
+  font-size: 1.05rem;
+}
+
+.quarto-listing-category-title {
+  font-weight: 600;
+}

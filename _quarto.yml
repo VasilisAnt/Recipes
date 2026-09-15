@@ -1,0 +1,25 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - index.qmd
+    - recipes/**/*.qmd
+
+website:
+  title: "Οι συνταγές μου"
+  description: "Προσωπική συλλογή συνταγών"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Συνταγές
+  page-footer:
+    center: "© {{< meta author >}}"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false
+    number-sections: false
+
+lang: el
