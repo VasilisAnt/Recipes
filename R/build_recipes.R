@@ -10,6 +10,7 @@ library(stringr)
 library(stringi)
 library(fs)
 library(glue)
+library(readr)
 
 # ---- 1. Recipe data ---------------------------------------------------------
 # Add new recipes here as additional rows. `body` accepts multi-line text
