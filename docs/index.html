@@ -83,7 +83,8 @@ ul.task-list li input[type="checkbox"] {
 
     const options = {
       valueNames: ['listing-title','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
+      page: 25,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
       searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
@@ -168,7 +169,7 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Κατηγορίες</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">Όλα <span class="quarto-category-count">(4)</span></div><div class="category" data-category="JUNFJTkxJUNFJUIzJUNFJUIxJUNGJTgwJUNFJUI3JUNFJUJDJUNFJUFEJUNFJUJEJUNFJUJG">Αγαπημένο <span class="quarto-category-count">(2)</span></div><div class="category" data-category="JUNFJTkzJUNFJUJCJUNGJTg1JUNFJUJBJUNFJUFD">Γλυκά <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUNFJTlBJUNFJUJGJUNGJTg0JUNGJThDJUNGJTgwJUNFJUJGJUNGJTg1JUNFJUJCJUNFJUJG">Κοτόπουλο <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUNFJTlBJUNGJTgxJUNFJUFEJUNFJUIxJUNGJTgy">Κρέας <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUNFJUE4JUNFJUFDJUNGJTgxJUNFJUI5JTIwJTI2JTIwJUNFJUI4JUNFJUIxJUNFJUJCJUNFJUIxJUNGJTgzJUNGJTgzJUNFJUI5JUNFJUJEJUNFJUFD">Ψάρι &amp; θαλασσινά <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Κατηγορίες</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">Όλα <span class="quarto-category-count">(59)</span></div><div class="category" data-category="JUNFJTkxJUNFJUIzJUNFJUIxJUNGJTgwJUNFJUI3JUNFJUJDJUNFJUFEJUNFJUJEJUNFJUJG">Αγαπημένο <span class="quarto-category-count">(8)</span></div><div class="category" data-category="JUNFJTkzJUNFJUJCJUNGJTg1JUNFJUJBJUNFJUFD">Γλυκά <span class="quarto-category-count">(6)</span></div><div class="category" data-category="JUNFJTk2JUNGJTg1JUNFJUJDJUNFJUIxJUNGJTgxJUNFJUI5JUNFJUJBJUNFJUFD">Ζυμαρικά <span class="quarto-category-count">(6)</span></div><div class="category" data-category="JUNFJTlBJUNFJUJGJUNGJTg0JUNGJThDJUNGJTgwJUNFJUJGJUNGJTg1JUNFJUJCJUNFJUJG">Κοτόπουλο <span class="quarto-category-count">(8)</span></div><div class="category" data-category="JUNFJTlBJUNGJTgxJUNFJUFEJUNFJUIxJUNGJTgy">Κρέας <span class="quarto-category-count">(3)</span></div><div class="category" data-category="JUNFJTlCJUNFJUIxJUNGJTg3JUNFJUIxJUNFJUJEJUNFJUI5JUNFJUJBJUNFJUFDJTIwJTI2JTIwJUNGJThDJUNGJTgzJUNGJTgwJUNGJTgxJUNFJUI5JUNFJUIx">Λαχανικά &amp; όσπρια <span class="quarto-category-count">(2)</span></div><div class="category" data-category="JUNFJTlGJUNGJTgxJUNFJUI1JUNFJUJBJUNGJTg0JUNFJUI5JUNFJUJBJUNFJUFDJTIwJTI2JTIwJUNFJUJEJUNGJTg0JUNFJUI5JUNGJTgw">Ορεκτικά &amp; ντιπ <span class="quarto-category-count">(3)</span></div><div class="category" data-category="JUNFJUEwJUNFJUJGJUNGJTg0JUNFJUFD">Ποτά <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUNFJUEwJUNGJTgxJUNGJTg5JUNFJUI5JUNFJUJEJUNGJThDJTIwJTI2JTIwJUNGJTgzJUNFJUJEJUNFJUIxJUNFJUJB">Πρωινό &amp; σνακ <span class="quarto-category-count">(6)</span></div><div class="category" data-category="JUNFJUEzJUNFJUIxJUNFJUJCJUNFJUFDJUNGJTg0JUNFJUI1JUNGJTgy">Σαλάτες <span class="quarto-category-count">(9)</span></div><div class="category" data-category="JUNFJUEzJUNFJUJGJUNGJTgy">Σος <span class="quarto-category-count">(2)</span></div><div class="category" data-category="JUNFJUEzJUNFJUJGJUNGJThEJUNGJTgwJUNFJUI1JUNGJTgy">Σούπες <span class="quarto-category-count">(5)</span></div><div class="category" data-category="JUNFJUEzJUNGJTg1JUNFJUJEJUNFJUJGJUNFJUI0JUNFJUI1JUNGJTg1JUNGJTg0JUNFJUI5JUNFJUJBJUNFJUFD">Συνοδευτικά <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUNFJUE4JUNFJUFDJUNGJTgxJUNFJUI5JTIwJTI2JTIwJUNFJUI4JUNFJUIxJUNFJUJCJUNFJUIxJUNGJTgzJUNGJTgzJUNFJUI5JUNFJUJEJUNFJUFD">Ψάρι &amp; θαλασσινά <span class="quarto-category-count">(7)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
@@ -191,14 +192,224 @@ window.Quarto = {
 </header>
 
 
-<p>Όλες οι συνταγές της συλλογής, ταξινομημένες ανά κατηγορία. Κάντε κλικ σε μια κατηγορία αριστερά για φιλτράρισμα.</p>
+<p>Όλες οι συνταγές της συλλογής, ταξινομημένες ανά κατηγορία. Κάντε κλικ σε μια κατηγορία δεξιά για φιλτράρισμα.</p>
 
 
 
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="JUNFJTlBJUNFJUJGJUNGJTg0JUNGJThDJUNGJTgwJUNFJUJGJUNGJTg1JUNFJUJCJUNFJUJGJTJDJUNFJTkxJUNFJUIzJUNFJUIxJUNGJTgwJUNFJUI3JUNFJUJDJUNFJUFEJUNFJUJEJUNFJUJG" data-listing-file-modified-sort="1789498542931" data-listing-reading-time-sort="1" data-listing-word-count-sort="47">
+<div class="quarto-post image-right" data-index="0" data-categories="JUNFJTlBJUNGJTgxJUNFJUFEJUNFJUIxJUNGJTgy" data-listing-file-modified-sort="1789498543011" data-listing-reading-time-sort="2" data-listing-word-count-sort="295">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/kreas/beef-stroganoff-yia-4-atoma-caruso.html" class="no-external">Beef Stroganoff για 4 άτομα (caruso)</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJTlBJUNGJTgxJUNFJUFEJUNFJUIxJUNGJTgy'); return false;">Κρέας</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/kreas/beef-stroganoff-yia-4-atoma-caruso.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="JUNFJUE4JUNFJUFDJUNGJTgxJUNFJUI5JTIwJTI2JTIwJUNFJUI4JUNFJUIxJUNFJUJCJUNFJUIxJUNGJTgzJUNGJTgzJUNFJUI5JUNFJUJEJUNFJUFD" data-listing-file-modified-sort="1789498554372" data-listing-reading-time-sort="1" data-listing-word-count-sort="34">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/psari-thalassina/fishsticks-me-araka.html" class="no-external">Fishsticks με αρακά</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJUE4JUNFJUFDJUNGJTgxJUNFJUI5JTIwJTI2JTIwJUNFJUI4JUNFJUIxJUNFJUJCJUNFJUIxJUNGJTgzJUNGJTgzJUNFJUI5JUNFJUJEJUNFJUFD'); return false;">Ψάρι &amp; θαλασσινά</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/psari-thalassina/fishsticks-me-araka.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="JUNFJUEzJUNFJUJGJUNGJThEJUNGJTgwJUNFJUI1JUNGJTgy" data-listing-file-modified-sort="1789498554395" data-listing-reading-time-sort="1" data-listing-word-count-sort="178">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/soupes/hungarian-manitarosoupa.html" class="no-external">Hungarian Μανιταρόσουπα</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJUEzJUNFJUJGJUNGJThEJUNGJTgwJUNFJUI1JUNGJTgy'); return false;">Σούπες</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/soupes/hungarian-manitarosoupa.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="JUNFJUEwJUNGJTgxJUNGJTg5JUNFJUI5JUNFJUJEJUNGJThDJTIwJTI2JTIwJUNGJTgzJUNFJUJEJUNFJUIxJUNFJUJB" data-listing-file-modified-sort="1789498554395" data-listing-reading-time-sort="1" data-listing-word-count-sort="18">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/proino-snak/lunch-me-feta.html" class="no-external">Lunch με φέτα</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJUEwJUNGJTgxJUNGJTg5JUNFJUI5JUNFJUJEJUNGJThDJTIwJTI2JTIwJUNGJTgzJUNFJUJEJUNFJUIxJUNFJUJB'); return false;">Πρωινό &amp; σνακ</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/proino-snak/lunch-me-feta.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-categories="JUNFJUEwJUNGJTgxJUNGJTg5JUNFJUI5JUNFJUJEJUNGJThDJTIwJTI2JTIwJUNGJTgzJUNFJUJEJUNFJUIxJUNFJUJB" data-listing-file-modified-sort="1789498548484" data-listing-reading-time-sort="1" data-listing-word-count-sort="29">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/proino-snak/overnight-oats-me-fraoula-yia-1-5-atomo.html" class="no-external">Overnight oats με φράουλα (για 1,5 άτομο)</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJUEwJUNGJTgxJUNGJTg5JUNFJUI5JUNFJUJEJUNGJThDJTIwJTI2JTIwJUNGJTgzJUNFJUJEJUNFJUIxJUNFJUJB'); return false;">Πρωινό &amp; σνακ</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/proino-snak/overnight-oats-me-fraoula-yia-1-5-atomo.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="5" data-categories="JUNFJUEwJUNGJTgxJUNGJTg5JUNFJUI5JUNFJUJEJUNGJThDJTIwJTI2JTIwJUNGJTgzJUNFJUJEJUNFJUIxJUNFJUJB" data-listing-file-modified-sort="1789498542987" data-listing-reading-time-sort="1" data-listing-word-count-sort="11">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/proino-snak/sayaka-s-egg-recipe.html" class="no-external">Sayaka’s egg recipe</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJUEwJUNGJTgxJUNGJTg5JUNFJUI5JUNFJUJEJUNGJThDJTIwJTI2JTIwJUNGJTgzJUNFJUJEJUNFJUIxJUNFJUJB'); return false;">Πρωινό &amp; σνακ</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/proino-snak/sayaka-s-egg-recipe.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="6" data-categories="JUNFJTlGJUNGJTgxJUNFJUI1JUNFJUJBJUNGJTg0JUNFJUI5JUNFJUJBJUNFJUFDJTIwJTI2JTIwJUNFJUJEJUNGJTg0JUNFJUI5JUNGJTgw" data-listing-file-modified-sort="1789498548544" data-listing-reading-time-sort="1" data-listing-word-count-sort="91">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/orektika-dip/aloifi-revithia-me-melitzana.html" class="no-external">Αλοιφή ρεβύθια με μελιτζάνα</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJTlGJUNGJTgxJUNFJUI1JUNFJUJBJUNGJTg0JUNFJUI5JUNFJUJBJUNFJUFDJTIwJTI2JTIwJUNFJUJEJUNGJTg0JUNFJUI5JUNGJTgw'); return false;">Ορεκτικά &amp; ντιπ</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/orektika-dip/aloifi-revithia-me-melitzana.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="7" data-categories="JUNFJUEwJUNGJTgxJUNGJTg5JUNFJUI5JUNFJUJEJUNGJThDJTIwJTI2JTIwJUNGJTgzJUNFJUJEJUNFJUIxJUNFJUJB" data-listing-file-modified-sort="1789498542995" data-listing-reading-time-sort="1" data-listing-word-count-sort="42">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/proino-snak/avga-matia-me-domata-san-pita.html" class="no-external">Αυγά μάτια με ντομάτα (σαν πίτα)</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJUEwJUNGJTgxJUNGJTg5JUNFJUI5JUNFJUJEJUNGJThDJTIwJTI2JTIwJUNGJTgzJUNFJUJEJUNFJUIxJUNFJUJB'); return false;">Πρωινό &amp; σνακ</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/proino-snak/avga-matia-me-domata-san-pita.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="8" data-categories="JUNFJUEwJUNGJTgxJUNGJTg5JUNFJUI5JUNFJUJEJUNGJThDJTIwJTI2JTIwJUNGJTgzJUNFJUJEJUNFJUIxJUNFJUJB" data-listing-file-modified-sort="1789498554411" data-listing-reading-time-sort="1" data-listing-word-count-sort="21">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/proino-snak/avga-me-bourata-sindayi-vasili-proino.html" class="no-external">Αυγά με μπουράτα (συνταγή Βασίλη, πρωινό)</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJUEwJUNGJTgxJUNGJTg5JUNFJUI5JUNFJUJEJUNGJThDJTIwJTI2JTIwJUNGJTgzJUNFJUJEJUNFJUIxJUNFJUJB'); return false;">Πρωινό &amp; σνακ</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/proino-snak/avga-me-bourata-sindayi-vasili-proino.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="9" data-categories="JUNFJUEzJUNFJUJGJUNGJThEJUNGJTgwJUNFJUI1JUNGJTgy" data-listing-file-modified-sort="1789498554395" data-listing-reading-time-sort="1" data-listing-word-count-sort="113">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/soupes/yiouvarlakia-mama.html" class="no-external">Γιουβαρλάκια μαμά</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJUEzJUNFJUJGJUNGJThEJUNGJTgwJUNFJUI1JUNGJTgy'); return false;">Σούπες</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/soupes/yiouvarlakia-mama.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="10" data-categories="JUNFJTlGJUNGJTgxJUNFJUI1JUNFJUJBJUNGJTg0JUNFJUI5JUNFJUJBJUNFJUFDJTIwJTI2JTIwJUNFJUJEJUNGJTg0JUNFJUI5JUNGJTgwJTJDJUNFJTkxJUNFJUIzJUNFJUIxJUNGJTgwJUNFJUI3JUNFJUJDJUNFJUFEJUNFJUJEJUNFJUJG" data-listing-file-modified-sort="1789498548494" data-listing-reading-time-sort="1" data-listing-word-count-sort="42">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/orektika-dip/glikopatates-me-dip-yiaourtiou.html" class="no-external">Γλυκοπατάτες με dip γιαουρτιού</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJTlGJUNGJTgxJUNFJUI1JUNFJUJBJUNGJTg0JUNFJUI5JUNFJUJBJUNFJUFDJTIwJTI2JTIwJUNFJUJEJUNGJTg0JUNFJUI5JUNGJTgw'); return false;">Ορεκτικά &amp; ντιπ</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJTkxJUNFJUIzJUNFJUIxJUNGJTgwJUNFJUI3JUNFJUJDJUNFJUFEJUNFJUJEJUNFJUJG'); return false;">Αγαπημένο</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/orektika-dip/glikopatates-me-dip-yiaourtiou.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="11" data-categories="JUNFJUEwJUNFJUJGJUNGJTg0JUNFJUFD" data-listing-file-modified-sort="1789498548488" data-listing-reading-time-sort="1" data-listing-word-count-sort="17">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/pota/dhrosistiko-poto-me-passion-fruit.html" class="no-external">Δροσιστικό ποτό με passion fruit</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJUEwJUNFJUJGJUNGJTg0JUNFJUFD'); return false;">Ποτά</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/pota/dhrosistiko-poto-me-passion-fruit.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="12" data-categories="JUNFJTlGJUNGJTgxJUNFJUI1JUNFJUJBJUNGJTg0JUNFJUI5JUNFJUJBJUNFJUFDJTIwJTI2JTIwJUNFJUJEJUNGJTg0JUNFJUI5JUNGJTgw" data-listing-file-modified-sort="1789498554369" data-listing-reading-time-sort="1" data-listing-word-count-sort="106">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/orektika-dip/kanapedhakia.html" class="no-external">Καναπεδάκια</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJTlGJUNGJTgxJUNFJUI1JUNFJUJBJUNGJTg0JUNFJUI5JUNFJUJBJUNFJUFDJTIwJTI2JTIwJUNFJUJEJUNGJTg0JUNFJUI5JUNGJTgw'); return false;">Ορεκτικά &amp; ντιπ</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/orektika-dip/kanapedhakia.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="13" data-categories="JUNFJTlBJUNFJUJGJUNGJTg0JUNGJThDJUNGJTgwJUNFJUJGJUNGJTg1JUNFJUJCJUNFJUJGJTJDJUNFJTkxJUNFJUIzJUNFJUIxJUNGJTgwJUNFJUI3JUNFJUJDJUNFJUFEJUNFJUJEJUNFJUJG" data-listing-file-modified-sort="1789498542931" data-listing-reading-time-sort="1" data-listing-word-count-sort="47">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./recipes/kotopoulo/kotomboukies-kotopoulou.html" class="no-external">Κοτομπουκιές κοτόπουλου</a>
@@ -216,7 +427,137 @@ window.Quarto = {
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="JUNFJTkzJUNFJUJCJUNGJTg1JUNFJUJBJUNFJUFD" data-listing-file-modified-sort="1789496074850" data-listing-reading-time-sort="1" data-listing-word-count-sort="37">
+<div class="quarto-post image-right" data-index="14" data-categories="JUNFJTlBJUNFJUJGJUNGJTg0JUNGJThDJUNGJTgwJUNFJUJGJUNGJTg1JUNFJUJCJUNFJUJG" data-listing-file-modified-sort="1789498548516" data-listing-reading-time-sort="1" data-listing-word-count-sort="71">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/kotopoulo/kotopoulo-drumstick-me-kritharaki-olikis-sindayi-mamas.html" class="no-external">Κοτόπουλο drumstick με κριθαράκι ολικής (συνταγή μαμάς)</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJTlBJUNFJUJGJUNGJTg0JUNGJThDJUNGJTgwJUNFJUJGJUNGJTg1JUNFJUJCJUNFJUJG'); return false;">Κοτόπουλο</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/kotopoulo/kotopoulo-drumstick-me-kritharaki-olikis-sindayi-mamas.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="15" data-categories="JUNFJTlBJUNFJUJGJUNGJTg0JUNGJThDJUNGJTgwJUNFJUJGJUNGJTg1JUNFJUJCJUNFJUJG" data-listing-file-modified-sort="1789498548446" data-listing-reading-time-sort="1" data-listing-word-count-sort="113">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/kotopoulo/kotopoulo-ras-el-hanout-me-kous-kous-yia-4-atoma.html" class="no-external">Κοτόπουλο ras el hanout με κους κους (για 4 άτομα)</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJTlBJUNFJUJGJUNGJTg0JUNGJThDJUNGJTgwJUNFJUJGJUNGJTg1JUNFJUJCJUNFJUJG'); return false;">Κοτόπουλο</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/kotopoulo/kotopoulo-ras-el-hanout-me-kous-kous-yia-4-atoma.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="16" data-categories="JUNFJTlBJUNFJUJGJUNGJTg0JUNGJThDJUNGJTgwJUNFJUJGJUNGJTg1JUNFJUJCJUNFJUJG" data-listing-file-modified-sort="1789498543015" data-listing-reading-time-sort="1" data-listing-word-count-sort="43">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/kotopoulo/kotopoulo-me-moustardha-sindayi-bamba-vasili.html" class="no-external">Κοτόπουλο με μουστάρδα (συνταγή μπαμπά Βασίλη)</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJTlBJUNFJUJGJUNGJTg0JUNGJThDJUNGJTgwJUNFJUJGJUNGJTg1JUNFJUJCJUNFJUJG'); return false;">Κοτόπουλο</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/kotopoulo/kotopoulo-me-moustardha-sindayi-bamba-vasili.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="17" data-categories="JUNFJTlBJUNFJUJGJUNGJTg0JUNGJThDJUNGJTgwJUNFJUJGJUNGJTg1JUNFJUJCJUNFJUJG" data-listing-file-modified-sort="1789498554372" data-listing-reading-time-sort="1" data-listing-word-count-sort="53">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/kotopoulo/kotopoulo-me-rizi-sto-fourno-sindayi-yiayia-vasili.html" class="no-external">Κοτόπουλο με ρύζι στο φούρνο (συνταγή γιαγιά Βασίλη)</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJTlBJUNFJUJGJUNGJTg0JUNGJThDJUNGJTgwJUNFJUJGJUNGJTg1JUNFJUJCJUNFJUJG'); return false;">Κοτόπουλο</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/kotopoulo/kotopoulo-me-rizi-sto-fourno-sindayi-yiayia-vasili.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="18" data-categories="JUNFJTk2JUNGJTg1JUNFJUJDJUNFJUIxJUNGJTgxJUNFJUI5JUNFJUJBJUNFJUFDJTJDJUNFJTkxJUNFJUIzJUNFJUIxJUNGJTgwJUNFJUI3JUNFJUJDJUNFJUFEJUNFJUJEJUNFJUJG" data-listing-file-modified-sort="1789498548506" data-listing-reading-time-sort="1" data-listing-word-count-sort="103">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/zimarika/kotopoulo-me-fousili-se-saltsa-domatas-kremas.html" class="no-external">Κοτόπουλο με φουσίλι σε σάλτσα ντομάτας-κρέμας</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJTk2JUNGJTg1JUNFJUJDJUNFJUIxJUNGJTgxJUNFJUI5JUNFJUJBJUNFJUFD'); return false;">Ζυμαρικά</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJTkxJUNFJUIzJUNFJUIxJUNGJTgwJUNFJUI3JUNFJUJDJUNFJUFEJUNFJUJEJUNFJUJG'); return false;">Αγαπημένο</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/zimarika/kotopoulo-me-fousili-se-saltsa-domatas-kremas.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="19" data-categories="JUNFJTlBJUNFJUJGJUNGJTg0JUNGJThDJUNGJTgwJUNFJUJGJUNGJTg1JUNFJUJCJUNFJUJG" data-listing-file-modified-sort="1789498548446" data-listing-reading-time-sort="1" data-listing-word-count-sort="143">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/kotopoulo/kotopoulo-sto-fourno-me-basmati-kai-lemoni-yia-4-atoma.html" class="no-external">Κοτόπουλο στο φούρνο με μπασμάτι και λεμόνι (για 4 άτομα)</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJTlBJUNFJUJGJUNGJTg0JUNGJThDJUNGJTgwJUNFJUJGJUNGJTg1JUNFJUJCJUNFJUJG'); return false;">Κοτόπουλο</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/kotopoulo/kotopoulo-sto-fourno-me-basmati-kai-lemoni-yia-4-atoma.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="20" data-categories="JUNFJTlBJUNFJUJGJUNGJTg0JUNGJThDJUNGJTgwJUNFJUJGJUNGJTg1JUNFJUJCJUNFJUJG" data-listing-file-modified-sort="1789498554388" data-listing-reading-time-sort="1" data-listing-word-count-sort="54">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/kotopoulo/kotopoulo-tigania-me-poure.html" class="no-external">Κοτόπουλο τηγανιά με πουρέ</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJTlBJUNFJUJGJUNGJTg0JUNGJThDJUNGJTgwJUNFJUJGJUNGJTg1JUNFJUJCJUNFJUJG'); return false;">Κοτόπουλο</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/kotopoulo/kotopoulo-tigania-me-poure.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="21" data-categories="JUNFJTkzJUNFJUJCJUNGJTg1JUNFJUJBJUNFJUFD" data-listing-file-modified-sort="1789498543020" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/glika/krepes-15-temakhia.html" class="no-external">Κρέπες (15 τεμάχια)</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJTkzJUNFJUJCJUNGJTg1JUNFJUJBJUNFJUFD'); return false;">Γλυκά</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/glika/krepes-15-temakhia.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="22" data-categories="JUNFJTkzJUNFJUJCJUNGJTg1JUNFJUJBJUNFJUFD" data-listing-file-modified-sort="1789496074850" data-listing-reading-time-sort="1" data-listing-word-count-sort="37">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./recipes/glika/krepes-sofia.html" class="no-external">Κρέπες «Σοφία»</a>
@@ -232,7 +573,151 @@ window.Quarto = {
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="JUNFJTlBJUNGJTgxJUNFJUFEJUNFJUIxJUNGJTgy" data-listing-file-modified-sort="1789496074850" data-listing-reading-time-sort="1" data-listing-word-count-sort="125">
+<div class="quarto-post image-right" data-index="23" data-categories="JUNFJTkzJUNFJUJCJUNGJTg1JUNFJUJBJUNFJUFD" data-listing-file-modified-sort="1789498542940" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/glika/krepes-sofia-20-krepes.html" class="no-external">Κρέπες «Σοφία» (~20 κρέπες)</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJTkzJUNFJUJCJUNGJTg1JUNFJUJBJUNFJUFD'); return false;">Γλυκά</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/glika/krepes-sofia-20-krepes.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="24" data-categories="JUNFJTlBJUNFJUJGJUNGJTg0JUNGJThDJUNGJTgwJUNFJUJGJUNGJTg1JUNFJUJCJUNFJUJG" data-listing-file-modified-sort="1789498554356" data-listing-reading-time-sort="1" data-listing-word-count-sort="65">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/kotopoulo/kritharaki-me-kotopoulo.html" class="no-external">Κριθαράκι με κοτόπουλο</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJTlBJUNFJUJGJUNGJTg0JUNGJThDJUNGJTgwJUNFJUJGJUNGJTg1JUNFJUJCJUNFJUJG'); return false;">Κοτόπουλο</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/kotopoulo/kritharaki-me-kotopoulo.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="25" data-categories="JUNFJTk2JUNGJTg1JUNFJUJDJUNFJUIxJUNGJTgxJUNFJUI5JUNFJUJBJUNFJUFD" data-listing-file-modified-sort="1789498554341" data-listing-reading-time-sort="1" data-listing-word-count-sort="44">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/zimarika/kritharaki-me-mix-manitarion.html" class="no-external">Κριθαράκι με μιξ μανιταριών</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJTk2JUNGJTg1JUNFJUJDJUNFJUIxJUNGJTgxJUNFJUI5JUNFJUJBJUNFJUFD'); return false;">Ζυμαρικά</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/zimarika/kritharaki-me-mix-manitarion.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="26" data-categories="JUNFJTk2JUNGJTg1JUNFJUJDJUNFJUIxJUNGJTgxJUNFJUI5JUNFJUJBJUNFJUFD" data-listing-file-modified-sort="1789498548544" data-listing-reading-time-sort="2" data-listing-word-count-sort="235">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/zimarika/lingouini-me-thalassina-karmbonara.html" class="no-external">Λιγκουίνι με θαλασσινά καρμπονάρα</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJTk2JUNGJTg1JUNFJUJDJUNFJUIxJUNGJTgxJUNFJUI5JUNFJUJBJUNFJUFD'); return false;">Ζυμαρικά</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/zimarika/lingouini-me-thalassina-karmbonara.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="27" data-categories="JUNFJTkzJUNFJUJCJUNGJTg1JUNFJUJBJUNFJUFD" data-listing-file-modified-sort="1789498542962" data-listing-reading-time-sort="1" data-listing-word-count-sort="23">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/glika/mila-sto-fourno.html" class="no-external">Μήλα στο φούρνο</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJTkzJUNFJUJCJUNGJTg1JUNFJUJBJUNFJUFD'); return false;">Γλυκά</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/glika/mila-sto-fourno.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="28" data-categories="JUNFJTk2JUNGJTg1JUNFJUJDJUNFJUIxJUNGJTgxJUNFJUI5JUNFJUJBJUNFJUFD" data-listing-file-modified-sort="1789498548472" data-listing-reading-time-sort="1" data-listing-word-count-sort="47">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/zimarika/makaronia-me-solomo-kai-sparangia.html" class="no-external">Μακαρόνια με σολομό και σπαράγγια</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJTk2JUNGJTg1JUNFJUJDJUNFJUIxJUNGJTgxJUNFJUI5JUNFJUJBJUNFJUFD'); return false;">Ζυμαρικά</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/zimarika/makaronia-me-solomo-kai-sparangia.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="29" data-categories="JUNFJTk2JUNGJTg1JUNFJUJDJUNFJUIxJUNGJTgxJUNFJUI5JUNFJUJBJUNFJUFD" data-listing-file-modified-sort="1789498554353" data-listing-reading-time-sort="1" data-listing-word-count-sort="40">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/zimarika/makaronia-me-sparangia.html" class="no-external">Μακαρόνια με σπαράγγια</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJTk2JUNGJTg1JUNFJUJDJUNFJUIxJUNGJTgxJUNFJUI5JUNFJUJBJUNFJUFD'); return false;">Ζυμαρικά</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/zimarika/makaronia-me-sparangia.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="30" data-categories="JUNFJTkzJUNFJUJCJUNGJTg1JUNFJUJBJUNFJUFD" data-listing-file-modified-sort="1789498548446" data-listing-reading-time-sort="1" data-listing-word-count-sort="19">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/glika/marmeladha-smeourou-vatomourou.html" class="no-external">Μαρμελάδα σμέουρου-βατόμουρου</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJTkzJUNFJUJCJUNGJTg1JUNFJUJBJUNFJUFD'); return false;">Γλυκά</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/glika/marmeladha-smeourou-vatomourou.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="31" data-categories="JUNFJUE4JUNFJUFDJUNGJTgxJUNFJUI5JTIwJTI2JTIwJUNFJUI4JUNFJUIxJUNFJUJCJUNFJUIxJUNGJTgzJUNGJTgzJUNFJUI5JUNFJUJEJUNFJUFD" data-listing-file-modified-sort="1789498548466" data-listing-reading-time-sort="1" data-listing-word-count-sort="136">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/psari-thalassina/bakaliaros-me-gala-karidhas-yia-4-atoma.html" class="no-external">Μπακαλιάρος με γάλα καρύδας (για 4 άτομα)</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJUE4JUNFJUFDJUNGJTgxJUNFJUI5JTIwJTI2JTIwJUNFJUI4JUNFJUIxJUNFJUJCJUNFJUIxJUNGJTgzJUNGJTgzJUNFJUI5JUNFJUJEJUNFJUFD'); return false;">Ψάρι &amp; θαλασσινά</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/psari-thalassina/bakaliaros-me-gala-karidhas-yia-4-atoma.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="32" data-categories="JUNFJTlBJUNGJTgxJUNFJUFEJUNFJUIxJUNGJTgy" data-listing-file-modified-sort="1789496074850" data-listing-reading-time-sort="1" data-listing-word-count-sort="125">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./recipes/kreas/brizola-kommatia-me-poure-patatas-kai-sparangia.html" class="no-external">Μπριζόλα κομμάτια με πουρέ πατάτας και σπαράγγια</a>
@@ -248,7 +733,333 @@ window.Quarto = {
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="JUNFJUE4JUNFJUFDJUNGJTgxJUNFJUI5JTIwJTI2JTIwJUNFJUI4JUNFJUIxJUNFJUJCJUNFJUIxJUNGJTgzJUNGJTgzJUNFJUI5JUNFJUJEJUNFJUFDJTJDJUNFJTkxJUNFJUIzJUNFJUIxJUNGJTgwJUNFJUI3JUNFJUJDJUNFJUFEJUNFJUJEJUNFJUJG" data-listing-file-modified-sort="1789498542936" data-listing-reading-time-sort="1" data-listing-word-count-sort="55">
+<div class="quarto-post image-right" data-index="33" data-categories="JUNFJTlBJUNGJTgxJUNFJUFEJUNFJUIxJUNGJTgyJTJDJUNFJTkxJUNFJUIzJUNFJUIxJUNGJTgwJUNFJUI3JUNFJUJDJUNFJUFEJUNFJUJEJUNFJUJG" data-listing-file-modified-sort="1789498542950" data-listing-reading-time-sort="1" data-listing-word-count-sort="123">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/kreas/brizola-kommatia-me-poure-patatas-kai-sparangia-yia-2-atoma.html" class="no-external">Μπριζόλα κομμάτια με πουρέ πατάτας και σπαράγγια (για 2 άτομα)</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJTlBJUNGJTgxJUNFJUFEJUNFJUIxJUNGJTgy'); return false;">Κρέας</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJTkxJUNFJUIzJUNFJUIxJUNGJTgwJUNFJUI3JUNFJUJDJUNFJUFEJUNFJUJEJUNFJUJG'); return false;">Αγαπημένο</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/kreas/brizola-kommatia-me-poure-patatas-kai-sparangia-yia-2-atoma.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="34" data-categories="JUNFJUE4JUNFJUFDJUNGJTgxJUNFJUI5JTIwJTI2JTIwJUNFJUI4JUNFJUIxJUNFJUJCJUNFJUIxJUNGJTgzJUNGJTgzJUNFJUI5JUNFJUJEJUNFJUFD" data-listing-file-modified-sort="1789498548502" data-listing-reading-time-sort="1" data-listing-word-count-sort="38">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/psari-thalassina/pangasious-sto-fourno.html" class="no-external">Παγκάσιους στο φούρνο</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJUE4JUNFJUFDJUNGJTgxJUNFJUI5JTIwJTI2JTIwJUNFJUI4JUNFJUIxJUNFJUJCJUNFJUIxJUNGJTgzJUNGJTgzJUNFJUI5JUNFJUJEJUNFJUFD'); return false;">Ψάρι &amp; θαλασσινά</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/psari-thalassina/pangasious-sto-fourno.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="35" data-categories="JUNFJUEzJUNFJUIxJUNFJUJCJUNFJUFDJUNGJTg0JUNFJUI1JUNGJTgy" data-listing-file-modified-sort="1789498548521" data-listing-reading-time-sort="1" data-listing-word-count-sort="32">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/salates/patatosalata-sindayi-mamas.html" class="no-external">Πατατοσαλάτα (συνταγή μαμάς)</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJUEzJUNFJUIxJUNFJUJCJUNFJUFDJUNGJTg0JUNFJUI1JUNGJTgy'); return false;">Σαλάτες</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/salates/patatosalata-sindayi-mamas.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="36" data-categories="JUNFJUEzJUNGJTg1JUNFJUJEJUNFJUJGJUNFJUI0JUNFJUI1JUNGJTg1JUNGJTg0JUNFJUI5JUNFJUJBJUNFJUFD" data-listing-file-modified-sort="1789498554372" data-listing-reading-time-sort="1" data-listing-word-count-sort="36">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/sinodhevtika/poures-karoto.html" class="no-external">Πουρές καρότο</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJUEzJUNGJTg1JUNFJUJEJUNFJUJGJUNFJUI0JUNFJUI1JUNGJTg1JUNGJTg0JUNFJUI5JUNFJUJBJUNFJUFD'); return false;">Συνοδευτικά</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/sinodhevtika/poures-karoto.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="37" data-categories="JUNFJUE4JUNFJUFDJUNGJTgxJUNFJUI5JTIwJTI2JTIwJUNFJUI4JUNFJUIxJUNFJUJCJUNFJUIxJUNGJTgzJUNGJTgzJUNFJUI5JUNFJUJEJUNFJUFD" data-listing-file-modified-sort="1789498554415" data-listing-reading-time-sort="1" data-listing-word-count-sort="47">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/psari-thalassina/poke-bol-me-solomo.html" class="no-external">Πόκε μπολ με σολομό</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJUE4JUNFJUFDJUNGJTgxJUNFJUI5JTIwJTI2JTIwJUNFJUI4JUNFJUIxJUNFJUJCJUNFJUIxJUNGJTgzJUNGJTgzJUNFJUI5JUNFJUJEJUNFJUFD'); return false;">Ψάρι &amp; θαλασσινά</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/psari-thalassina/poke-bol-me-solomo.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="38" data-categories="JUNFJTk2JUNGJTg1JUNFJUJDJUNFJUIxJUNGJTgxJUNFJUI5JUNFJUJBJUNFJUFD" data-listing-file-modified-sort="1789498554415" data-listing-reading-time-sort="1" data-listing-word-count-sort="82">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/zimarika/ravioli-me-manitari.html" class="no-external">Ραβιόλι με μανιτάρι</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJTk2JUNGJTg1JUNFJUJDJUNFJUIxJUNGJTgxJUNFJUI5JUNFJUJBJUNFJUFD'); return false;">Ζυμαρικά</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/zimarika/ravioli-me-manitari.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="39" data-categories="JUNFJUE4JUNFJUFDJUNGJTgxJUNFJUI5JTIwJTI2JTIwJUNFJUI4JUNFJUIxJUNFJUJCJUNFJUIxJUNGJTgzJUNGJTgzJUNFJUI5JUNFJUJEJUNFJUFD" data-listing-file-modified-sort="1789498548533" data-listing-reading-time-sort="1" data-listing-word-count-sort="60">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/psari-thalassina/sandouits-me-solomo.html" class="no-external">Σάντουιτς με σολομό</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJUE4JUNFJUFDJUNGJTgxJUNFJUI5JTIwJTI2JTIwJUNFJUI4JUNFJUIxJUNFJUJCJUNFJUIxJUNGJTgzJUNGJTgzJUNFJUI5JUNFJUJEJUNFJUFD'); return false;">Ψάρι &amp; θαλασσινά</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/psari-thalassina/sandouits-me-solomo.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="40" data-categories="JUNFJUEzJUNFJUIxJUNFJUJCJUNFJUFDJUNGJTg0JUNFJUI1JUNGJTgy" data-listing-file-modified-sort="1789498548494" data-listing-reading-time-sort="1" data-listing-word-count-sort="18">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/salates/salata-me-mavromatika-fasolia.html" class="no-external">Σαλάτα με μαυρομάτικα φασόλια</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJUEzJUNFJUIxJUNFJUJCJUNFJUFDJUNGJTg0JUNFJUI1JUNGJTgy'); return false;">Σαλάτες</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/salates/salata-me-mavromatika-fasolia.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="41" data-categories="JUNFJUEzJUNFJUIxJUNFJUJCJUNFJUFDJUNGJTg0JUNFJUI1JUNGJTgy" data-listing-file-modified-sort="1789498548544" data-listing-reading-time-sort="1" data-listing-word-count-sort="16">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/salates/salata-me-revithia-kai-loupino.html" class="no-external">Σαλάτα με ρεβύθια και λούπινο</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJUEzJUNFJUIxJUNFJUJCJUNFJUFDJUNGJTg0JUNFJUI1JUNGJTgy'); return false;">Σαλάτες</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/salates/salata-me-revithia-kai-loupino.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="42" data-categories="JUNFJUEzJUNFJUIxJUNFJUJCJUNFJUFDJUNGJTg0JUNFJUI1JUNGJTgy" data-listing-file-modified-sort="1789498554356" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/salates/salata-me-revithia-kai-brokolo.html" class="no-external">Σαλάτα με ρεβύθια και μπρόκολο</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJUEzJUNFJUIxJUNFJUJCJUNFJUFDJUNGJTg0JUNFJUI1JUNGJTgy'); return false;">Σαλάτες</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/salates/salata-me-revithia-kai-brokolo.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="43" data-categories="JUNFJUEzJUNFJUIxJUNFJUJCJUNFJUFDJUNGJTg0JUNFJUI1JUNGJTgy" data-listing-file-modified-sort="1789498551433" data-listing-reading-time-sort="1" data-listing-word-count-sort="28">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/salates/salata-me-rodhakino.html" class="no-external">Σαλάτα με ροδάκινο</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJUEzJUNFJUIxJUNFJUJCJUNFJUFDJUNGJTg0JUNFJUI1JUNGJTgy'); return false;">Σαλάτες</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/salates/salata-me-rodhakino.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="44" data-categories="JUNFJUEzJUNFJUIxJUNFJUJCJUNFJUFDJUNGJTg0JUNFJUI1JUNGJTgy" data-listing-file-modified-sort="1789498548525" data-listing-reading-time-sort="1" data-listing-word-count-sort="59">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/salates/salata-patates-me-pesto.html" class="no-external">Σαλάτα πατάτες με πέστο</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJUEzJUNFJUIxJUNFJUJCJUNFJUFDJUNGJTg0JUNFJUI1JUNGJTgy'); return false;">Σαλάτες</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/salates/salata-patates-me-pesto.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="45" data-categories="JUNFJUEzJUNFJUIxJUNFJUJCJUNFJUFDJUNGJTg0JUNFJUI1JUNGJTgy" data-listing-file-modified-sort="1789498548530" data-listing-reading-time-sort="1" data-listing-word-count-sort="44">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/salates/salata-solomou-me-revithia-kai-poke-sauce.html" class="no-external">Σαλάτα σολομού με ρεβύθια και poke sauce</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJUEzJUNFJUIxJUNFJUJCJUNFJUFDJUNGJTg0JUNFJUI1JUNGJTgy'); return false;">Σαλάτες</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/salates/salata-solomou-me-revithia-kai-poke-sauce.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="46" data-categories="JUNFJUEzJUNFJUIxJUNFJUJCJUNFJUFDJUNGJTg0JUNFJUI1JUNGJTgy" data-listing-file-modified-sort="1789498548492" data-listing-reading-time-sort="1" data-listing-word-count-sort="44">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/salates/salata-sparangion.html" class="no-external">Σαλάτα σπαραγγιών</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJUEzJUNFJUIxJUNFJUJCJUNFJUFDJUNGJTg0JUNFJUI1JUNGJTgy'); return false;">Σαλάτες</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/salates/salata-sparangion.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="47" data-categories="JUNFJUE4JUNFJUFDJUNGJTgxJUNFJUI5JTIwJTI2JTIwJUNFJUI4JUNFJUIxJUNFJUJCJUNFJUIxJUNGJTgzJUNGJTgzJUNFJUI5JUNFJUJEJUNFJUFDJTJDJUNFJTkxJUNFJUIzJUNFJUIxJUNGJTgwJUNFJUI3JUNFJUJDJUNFJUFEJUNFJUJEJUNFJUJG" data-listing-file-modified-sort="1789498548512" data-listing-reading-time-sort="1" data-listing-word-count-sort="38">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/psari-thalassina/solomos-me-basmati-stil-iaponiko.html" class="no-external">Σολομός με μπασμάτι, στιλ ιαπωνικό</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJUE4JUNFJUFDJUNGJTgxJUNFJUI5JTIwJTI2JTIwJUNFJUI4JUNFJUIxJUNFJUJCJUNFJUIxJUNGJTgzJUNGJTgzJUNFJUI5JUNFJUJEJUNFJUFD'); return false;">Ψάρι &amp; θαλασσινά</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJTkxJUNFJUIzJUNFJUIxJUNGJTgwJUNFJUI3JUNFJUJDJUNFJUFEJUNFJUJEJUNFJUJG'); return false;">Αγαπημένο</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/psari-thalassina/solomos-me-basmati-stil-iaponiko.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="48" data-categories="JUNFJUEzJUNFJUIxJUNFJUJCJUNFJUFDJUNGJTg0JUNFJUI1JUNGJTgy" data-listing-file-modified-sort="1789498548544" data-listing-reading-time-sort="1" data-listing-word-count-sort="178">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/salates/solomos-me-salata-patatas.html" class="no-external">Σολομός με σαλάτα πατάτας</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJUEzJUNFJUIxJUNFJUJCJUNFJUFDJUNGJTg0JUNFJUI1JUNGJTgy'); return false;">Σαλάτες</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/salates/solomos-me-salata-patatas.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="49" data-categories="JUNFJUEzJUNFJUJGJUNGJTgy" data-listing-file-modified-sort="1789498543000" data-listing-reading-time-sort="1" data-listing-word-count-sort="7">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/sos/sos-yiaourtiou-yia-lakhanakia-vrixellon.html" class="no-external">Σος γιαουρτιού για λαχανάκια Βρυξελλών</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJUEzJUNFJUJGJUNGJTgy'); return false;">Σος</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/sos/sos-yiaourtiou-yia-lakhanakia-vrixellon.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="50" data-categories="JUNFJUEzJUNFJUJGJUNGJTgy" data-listing-file-modified-sort="1789498554388" data-listing-reading-time-sort="1" data-listing-word-count-sort="10">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/sos/sos-portokali-yia-solomo-tou-vasili.html" class="no-external">Σος πορτοκάλι για σολομό (του Βασίλη)</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJUEzJUNFJUJGJUNGJTgy'); return false;">Σος</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/sos/sos-portokali-yia-solomo-tou-vasili.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="51" data-categories="JUNFJUEzJUNFJUJGJUNGJThEJUNGJTgwJUNFJUI1JUNGJTgyJTJDJUNFJTkxJUNFJUIzJUNFJUIxJUNGJTgwJUNFJUI3JUNFJUJDJUNFJUFEJUNFJUJEJUNFJUJG" data-listing-file-modified-sort="1789498548480" data-listing-reading-time-sort="1" data-listing-word-count-sort="72">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/soupes/soupa-ala-ramen-yia-4-meridhes.html" class="no-external">Σούπα αλά ραμέν (για 4 μερίδες)</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJUEzJUNFJUJGJUNGJThEJUNGJTgwJUNFJUI1JUNGJTgy'); return false;">Σούπες</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJTkxJUNFJUIzJUNFJUIxJUNGJTgwJUNFJUI3JUNFJUJDJUNFJUFEJUNFJUJEJUNFJUJG'); return false;">Αγαπημένο</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/soupes/soupa-ala-ramen-yia-4-meridhes.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="52" data-categories="JUNFJUEzJUNFJUJGJUNGJThEJUNGJTgwJUNFJUI1JUNGJTgy" data-listing-file-modified-sort="1789498542978" data-listing-reading-time-sort="1" data-listing-word-count-sort="31">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/soupes/soupa-lakhanikon-me-fidhe.html" class="no-external">Σούπα λαχανικών με φιδέ</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJUEzJUNFJUJGJUNGJThEJUNGJTgwJUNFJUI1JUNGJTgy'); return false;">Σούπες</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/soupes/soupa-lakhanikon-me-fidhe.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="53" data-categories="JUNFJUE4JUNFJUFDJUNGJTgxJUNFJUI5JTIwJTI2JTIwJUNFJUI4JUNFJUIxJUNFJUJCJUNFJUIxJUNGJTgzJUNGJTgzJUNFJUI5JUNFJUJEJUNFJUFDJTJDJUNFJTkxJUNFJUIzJUNFJUIxJUNGJTgwJUNFJUI3JUNFJUJDJUNFJUFEJUNFJUJEJUNFJUJG" data-listing-file-modified-sort="1789498542936" data-listing-reading-time-sort="1" data-listing-word-count-sort="55">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./recipes/psari-thalassina/spanaki-me-solomo.html" class="no-external">Σπανάκι με σολομό</a>
@@ -266,8 +1077,93 @@ window.Quarto = {
 </a>
 </div>
 </div>
+<div class="quarto-post image-right" data-index="54" data-categories="JUNFJUEwJUNGJTgxJUNGJTg5JUNFJUI5JUNFJUJEJUNGJThDJTIwJTI2JTIwJUNGJTgzJUNFJUJEJUNFJUIxJUNFJUJB" data-listing-file-modified-sort="1789498543025" data-listing-reading-time-sort="1" data-listing-word-count-sort="70">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/proino-snak/tost-me-vatomoura.html" class="no-external">Τοστ με βατόμουρα</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJUEwJUNGJTgxJUNGJTg5JUNFJUI5JUNFJUJEJUNGJThDJTIwJTI2JTIwJUNGJTgzJUNFJUJEJUNFJUIxJUNFJUJB'); return false;">Πρωινό &amp; σνακ</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/proino-snak/tost-me-vatomoura.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="55" data-categories="JUNFJTlCJUNFJUIxJUNGJTg3JUNFJUIxJUNFJUJEJUNFJUI5JUNFJUJBJUNFJUFDJTIwJTI2JTIwJUNGJThDJUNGJTgzJUNGJTgwJUNGJTgxJUNFJUI5JUNFJUIx" data-listing-file-modified-sort="1789498554372" data-listing-reading-time-sort="1" data-listing-word-count-sort="68">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/lakhanika-ospria/tourlou-ala-evi.html" class="no-external">Τουρλού αλά Εύη</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJTlCJUNFJUIxJUNGJTg3JUNFJUIxJUNFJUJEJUNFJUI5JUNFJUJBJUNFJUFDJTIwJTI2JTIwJUNGJThDJUNGJTgzJUNGJTgwJUNGJTgxJUNFJUI5JUNFJUIx'); return false;">Λαχανικά &amp; όσπρια</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/lakhanika-ospria/tourlou-ala-evi.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="56" data-categories="JUNFJTlCJUNFJUIxJUNGJTg3JUNFJUIxJUNFJUJEJUNFJUI5JUNFJUJBJUNFJUFDJTIwJTI2JTIwJUNGJThDJUNGJTgzJUNGJTgwJUNGJTgxJUNFJUI5JUNFJUIx" data-listing-file-modified-sort="1789498554404" data-listing-reading-time-sort="1" data-listing-word-count-sort="76">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/lakhanika-ospria/tourlou-me-kokkines-fakes.html" class="no-external">Τουρλού με κόκκινες φακές</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJTlCJUNFJUIxJUNGJTg3JUNFJUIxJUNFJUJEJUNFJUI5JUNFJUJBJUNFJUFDJTIwJTI2JTIwJUNGJThDJUNGJTgzJUNGJTgwJUNGJTgxJUNFJUI5JUNFJUIx'); return false;">Λαχανικά &amp; όσπρια</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/lakhanika-ospria/tourlou-me-kokkines-fakes.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="57" data-categories="JUNFJUEzJUNFJUJGJUNGJThEJUNGJTgwJUNFJUI1JUNGJTgyJTJDJUNFJTkxJUNFJUIzJUNFJUIxJUNGJTgwJUNFJUI3JUNFJUJDJUNFJUFEJUNFJUJEJUNFJUJG" data-listing-file-modified-sort="1789498543030" data-listing-reading-time-sort="1" data-listing-word-count-sort="123">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/soupes/trakhanas-me-moskharisio-soupa-yia-4-atoma.html" class="no-external">Τραχανάς με μοσχαρίσιο σούπα (για 4 άτομα)</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJUEzJUNFJUJGJUNGJThEJUNGJTgwJUNFJUI1JUNGJTgy'); return false;">Σούπες</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJTkxJUNFJUIzJUNFJUIxJUNGJTgwJUNFJUI3JUNFJUJDJUNFJUFEJUNFJUJEJUNFJUJG'); return false;">Αγαπημένο</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/soupes/trakhanas-me-moskharisio-soupa-yia-4-atoma.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="58" data-categories="JUNFJTkzJUNFJUJCJUNGJTg1JUNFJUJBJUNFJUFD" data-listing-file-modified-sort="1789498543006" data-listing-reading-time-sort="1" data-listing-word-count-sort="64">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./recipes/glika/iyiino-gliko-me-banana-kai-vromi.html" class="no-external">Υγιεινό γλυκό με μπανάνα και βρώμη</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUNFJTkzJUNFJUJCJUNGJTg1JUNFJUJBJUNFJUFD'); return false;">Γλυκά</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./recipes/glika/iyiino-gliko-me-banana-kai-vromi.html" class="no-external">
+</a>
+</div>
+</div>
 </div>
 <div class="listing-no-matching d-none">Δεν υπάρχουν αντιστοιχίες</div>
+<nav id="listing-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
 </div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
