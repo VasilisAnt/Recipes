@@ -3,11 +3,17 @@
     "listing": "/index.html",
     "items": [
       "/recipes/kreas/beef-stroganoff-yia-4-atoma-caruso.html",
+      "/recipes/beef-stroganoff-4-caruso.html",
       "/recipes/psari-thalassina/fishsticks-me-araka.html",
+      "/recipes/fishsticks.html",
       "/recipes/soupes/hungarian-manitarosoupa.html",
+      "/recipes/hungarian.html",
       "/recipes/proino-snak/lunch-me-feta.html",
+      "/recipes/lunch.html",
       "/recipes/proino-snak/overnight-oats-me-fraoula-yia-1-5-atomo.html",
+      "/recipes/overnight-oats-1-5.html",
       "/recipes/proino-snak/sayaka-s-egg-recipe.html",
+      "/recipes/sayaka-s-egg-recipe.html",
       "/recipes/orektika-dip/aloifi-revithia-me-melitzana.html",
       "/recipes/proino-snak/avga-matia-me-domata-san-pita.html",
       "/recipes/proino-snak/avga-me-bourata-sindayi-vasili-proino.html",
@@ -60,7 +66,16 @@
       "/recipes/lakhanika-ospria/tourlou-ala-evi.html",
       "/recipes/lakhanika-ospria/tourlou-me-kokkines-fakes.html",
       "/recipes/soupes/trakhanas-me-moskharisio-soupa-yia-4-atoma.html",
-      "/recipes/glika/iyiino-gliko-me-banana-kai-vromi.html"
+      "/recipes/glika/iyiino-gliko-me-banana-kai-vromi.html",
+      "/recipes/4.html",
+      "/recipes/15.html",
+      "/recipes/20.html",
+      "/recipes/poke-sauce.html",
+      "/recipes/2.html",
+      "/recipes/drumstick.html",
+      "/recipes/ras-el-hanout-4.html",
+      "/recipes/passion-fruit.html",
+      "/recipes/dip.html"
     ]
   }
 ]
